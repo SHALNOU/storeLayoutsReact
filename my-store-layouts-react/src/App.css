@@ -1,0 +1,58 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Стили и медиа-запрос */
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.product-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Распределяет элементы по ширине контейнера */
+	padding-top: 11vh;
+	margin: 0 auto;
+	align-items: center; /* Выравнивает элементы сверху */
+}
+
+.img-container {
+	flex: 0 1 calc(26.33% - 19px); /* Распределение на 3 колонки с отступами */
+	margin-bottom: 20px; /* Отступ между рядами */
+}
+
+.img {
+}
